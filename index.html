@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="container">
+        <form>
+        <div><label class="fname">First Name:</label><input type="text" name="first_name" id="fname" required></div><br>
+        <div><label class="lname">Last Name:</label><input type="text" name="last_name" id="lname" required></div><br>
+        <div><label class="address">Address:</Address></label><textarea rows="5" cols="25" id="address" required></textarea></div><br>
+        <div><label class="pin">Pin:</label><input type="number" id="pin" required></div><br>
+        <div><label class="gender">Gender:</label><select placeholder="gender" id="gender">
+            <option></option>
+            <option class="male">Male</option>
+            <option class="female">Female</option>
+        </select></div><br>
+        
+        <label class="food">Choice of Food : </label>
+
+        <div><input type="radio" name="Fruit and Vegetables" id="veg"><label class="fruit">Fruit and Vegetables</label></div>
+        <div><input type="radio" name="Starchy Food" id="starchy"><label class="starchy">Starchy food</label></div>
+        <div><input type="radio" name="Dairy" id="dairy"><label class="dairy">Dairy</label></div>
+        <div><input type="radio" name="Protein" id="protein"><label class="protein">Protein</label></div>
+        <div><input type="radio" name="Fat" id="fat"><label class="fat">Fat</label></div><br>
+
+        <div><label class="state">State</label><input type="text" name="state" id="state"></div><br>
+        <div><label class="country">Country</label><input type="text" name="conuntry" id="country"></div><br>
+        <button class="btn btn-primary" type="button" onclick="append()">Submit</button>
+        <button class="btn btn-warning" type="button" onclick="reset()">reset</button>
+    </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
